@@ -71,7 +71,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-3">
-                            <h4 className='text-white mb-4'>Acoount</h4>
+                            <h4 className='text-white mb-4'>Account</h4>
                             <div className='footer-account d-flex flex-column'>
                                 <Link to="/" end className='text-white py-2 mb-1'>About Us</Link>
                                 <Link to="/" end className='text-white py-2 mb-1'>Faq</Link>
