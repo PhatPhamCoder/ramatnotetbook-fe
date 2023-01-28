@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 :root {
@@ -87,3 +88,10 @@ a {
 }
 
 /* Header Part End */
+
+/* Footer Part */
+footer {
+  background-color: var(--color-232f3e);
+}
+
+/* Footer Part End*/

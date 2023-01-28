@@ -88,35 +88,37 @@ const Header = () => {
                 </div >
             </header >
             <header className="header-bottom py-2">
-                <div className="row">
-                    <div className="col-12">
-                        <div className="menu-bottom d-flex align-items-center gap-30 container px-0">
-                            <div className="dropdown mx-3">
-                                <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
-                                    type="button"
-                                    id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <img src="images/menu.svg" alt="" />
-                                    <span className="me-5 d-inline-block">Shop Categories</span>
-                                </button>
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a className="dropdown-item text-white" href="#">Action</a></li>
-                                    <li><a className="dropdown-item text-white" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item text-white" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                            <div className="menu-links">
-                                <div className="d-flex align-items-center gap-15" >
-                                    <NavLink to="/" end>Home</NavLink>
-                                    <NavLink to="/" end>Our Store</NavLink>
-                                    <NavLink to="/" end>Blogs</NavLink>
-                                    <NavLink to="/contact" end>Contact</NavLink>
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="menu-bottom d-flex align-items-center gap-30">
+                                <div className="dropdown">
+                                    <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
+                                        type="button"
+                                        id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="images/menu.svg" alt="" />
+                                        <span className="me-5 d-inline-block">Shop Categories</span>
+                                    </button>
+                                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a className="dropdown-item text-white" href="#">Action</a></li>
+                                        <li><a className="dropdown-item text-white" href="#">Another action</a></li>
+                                        <li><a className="dropdown-item text-white" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div className="menu-links">
+                                    <div className="d-flex align-items-center gap-15" >
+                                        <NavLink to="/" end>Home</NavLink>
+                                        <NavLink to="/" end>Our Store</NavLink>
+                                        <NavLink to="/" end>Blogs</NavLink>
+                                        <NavLink to="/contact" end>Contact</NavLink>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </div >
                     </div >
-                </div >
+                </div>
             </header >
         </>
     );
