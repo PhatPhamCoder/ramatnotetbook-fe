@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
+import SpecialProduct from '../components/SpecialProduct';
 const Home = () => {
     return (
         <>
@@ -185,6 +186,84 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <section className="featured-wrapper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">
+                                Feauture Collection
+                            </h3>
+                        </div>
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                    </div>
+                </div>
+            </section>
+            <section className="famous-warpper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-4 d-flex justify-content-between gap-5 ">
+                            <div className="famous-card position-relative mx-auto">
+                                <img src="images/famous-1.png" className='img-fluid' alt="famous" />
+                                <div className='famous-content position-absolute '>
+                                    <Link to="/" className='button'>Xem thêm</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-4 d-flex justify-content-between gap-5 ">
+                            <div className="famous-card position-relative mx-auto">
+                                <img src="images/famous-2.png" className='img-fluid' alt="famous" />
+                                <div className='famous-content position-absolute '>
+                                    <Link to="/" className='button'>Xem thêm</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-4 d-flex justify-content-between gap-5 ">
+                            <div className="famous-card position-relative mx-auto">
+                                <img src="images/famous-3.png" className='img-fluid' alt="famous" />
+                                <div className='famous-content position-absolute '>
+                                    <Link to="/" className='button'>Xem thêm</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="special-wrapper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">
+                                Special Products
+                            </h3>
+                        </div>
+                        <div className="row">
+                            <SpecialProduct />
+                            <SpecialProduct />
+                            <SpecialProduct />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="popular-wrapper py-5 home-wrapper-2">
+                <div className="container-xxl">
+                    <div className="row">
+                        <div className="col-12">
+                            <h3 className="section-heading">
+                                Our Popular Products
+                            </h3>
+                        </div>
+                        <div className="row">
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="marque-wrapper py-5">
                 <div className="container-xxl">
                     <div className="row">
@@ -215,21 +294,6 @@ const Home = () => {
                                 </Marquee>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section className="blog-wrapper py-5 home-wrapper-2">
-                <div className="container-xxl">
-                    <div className="row">
-                        <div className="col-12">
-                            <h3 className="section-heading">
-                                Feauture Collection
-                            </h3>
-                        </div>
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
                     </div>
                 </div>
             </section>

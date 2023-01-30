@@ -13,6 +13,7 @@ const ProductCard = () => {
                 </div>
                 <div className="product-image">
                     <img src="images/book-01.png" className='img-fluid' alt="Product Image" />
+                    <img src="images/book-02.png" className='img-fluid' alt="Product Image" />
                 </div>
                 <div className="product-details">
                     <h6 className='type'>Sổ Note</h6>
@@ -23,7 +24,7 @@ const ProductCard = () => {
                         count={5}
                         size={24}
                         activeColor="#ffd700"
-                        value={3}
+                        value={4}
                         edit={true}
                     />
                     <p className="price">đ100.000</p>

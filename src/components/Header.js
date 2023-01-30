@@ -29,8 +29,8 @@ const Header = () => {
                     <div className="row align-item-center">
                         <div className="col-2">
                             <h5 className="py-3">
-                                <a className='text-white' href='#'>Ramat Note Book</a>
-                                {/* <Link className='text-white'>Ramat Note Book</Link> */}
+                                {/* <a className='text-white' href='#'>Ramat Note Book</a> */}
+                                <Link to="/" className='text-white'>Ramat Note Book</Link>
                             </h5>
                         </div>
                         <div className="col-5">
@@ -110,7 +110,7 @@ const Header = () => {
                                 <div className="menu-links">
                                     <div className="d-flex align-items-center gap-15" >
                                         <NavLink to="/" end>Home</NavLink>
-                                        <NavLink to="/" end>Our Store</NavLink>
+                                        <NavLink to="/store" end>Our Store</NavLink>
                                         <NavLink to="/" end>Blogs</NavLink>
                                         <NavLink to="/contact" end>Contact</NavLink>
                                     </div>
