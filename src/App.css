@@ -292,6 +292,7 @@ footer .input-group-text {
   font-weight: 500;
   overflow: hidden;
   cursor: pointer;
+  width: 100%;
 }
 
 .product-card .product-image>img:last-child {
@@ -331,6 +332,7 @@ footer .input-group-text {
   color: var(--color-bf4800);
   font-size: 13px;
   padding-top: 10px;
+  font-weight: 700;
 }
 
 .product-card .product-details h5 {
@@ -347,6 +349,12 @@ footer .input-group-text {
 .product-card .product-details p.price {
   font-size: 16px;
   color: var(--color-1c1c1b);
+}
+
+.product-card p.description {
+  font: 13px;
+  color: var(--color-777777);
+  margin-right: 20px;
 }
 
 .action-bar {
@@ -407,3 +415,127 @@ footer .input-group-text {
 }
 
 /* Famous-card End */
+
+/* Our Store */
+.filter-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 15px 25px;
+}
+
+.filter-card .filter-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--color-1c1c1b);
+  margin-bottom: 20px;
+}
+
+.filter-card ul,
+.filter-card .form-check-label {
+  list-style: none;
+  font-size: 13px;
+  line-height: 30px;
+  color: var(--color-777777);
+  cursor: pointer;
+}
+
+.filter-card .form-check-input:focus {
+  box-shadow: inherit;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.filter-card .form-check-input:checked {
+  background-color: var(--color-febd69);
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.colors {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.colors li {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.random-products h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.random-products:first-child {
+  border-bottom: 1px solid var(--color-ededed);
+}
+
+.filter-sort-grid {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.grid img {
+  width: 35px;
+  height: 35px;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+.gr-12 {
+  width: 100%;
+}
+
+.gr-6 {
+  width: 48%;
+}
+
+.gr-4 {
+  width: 32%;
+}
+
+.gr-3 {
+  width: 24%;
+}
+
+.gr-12 .product-card {
+  display: flex;
+  gap: 20px;
+}
+
+.gr-4 .product-image {
+  width: 100%;
+}
+
+.gr-6 .product-image img {
+  margin: auto;
+  display: block;
+}
+
+.gr-12 .product-card .product-image {
+  width: 270px;
+}
+
+.gr-12 .product-card .product-image {
+  height: auto;
+}
+
+.gr-12 .action-bar {
+  top: 14%;
+}
+
+/* Our Store End */
