@@ -284,6 +284,22 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 
+.single-blog-card h3 {
+  font-size: 24px;
+  color: var(--color-1c1c1b);
+  font-weight: 700;
+}
+
+.single-blog-card p {
+  color: var(--color-777777);
+}
+
+.single-blog-card a {
+  font-size: 15px;
+  color: var(--color-777777);
+  margin-bottom: 20px;
+}
+
 /* Blog Part End */
 /* Product Card */
 .product-card {
@@ -539,3 +555,114 @@ footer .input-group-text {
 }
 
 /* Our Store End */
+
+/* Contact Us */
+.contact-inner-wrapper {
+  padding: 20px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.contact-inner-wrapper>div {
+  width: 48%;
+}
+
+.contact-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 35px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.contact-inner-wrapper form .form-control {
+  background-color: var(--color-ededed);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+.contact-inner-wrapper form .button {
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+.contact-inner-wrapper ul {
+  list-style: none;
+}
+
+.contact-inner-wrapper address,
+.contact-inner-wrapper a,
+.contact-inner-wrapper p {
+  color: #3b4149;
+  font-weight: 500;
+}
+
+/* Contact Us End */
+
+/* wishtlist */
+.wishlist-card {
+  padding: 20px 15px;
+  border-radius: 10px;
+}
+
+.wishlist-icon .cross {
+  top: 20px;
+  right: 10px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.wishlist-card-image img {
+  border-radius: 10px;
+}
+
+.wishlist-card .wishlist-details h5 {
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* wishtlist End */
+
+/* Auth Card */
+.auth-card {
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.auth-card h2 {
+  font-weight: 700;
+}
+
+.auth-card .form-control {
+  border-radius: 10px;
+  background-color: var(--color-ededed);
+  border-color: transparent;
+}
+
+.auth-card a {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-1c1c1b);
+}
+
+.auth-card .signup {
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+
+.auth-card .signup:hover {
+  background-color: var(--color-131921);
+  color: white;
+}
+
+.auth-card .sub-title {
+  font-size: 13px;
+  color: var(--color-777777);
+}
+
+/* Auth Card End */

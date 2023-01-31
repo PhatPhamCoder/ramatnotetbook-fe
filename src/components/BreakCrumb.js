@@ -9,7 +9,7 @@ const BreakCrumb = (props) => {
                 <div className="row">
                     <div className="col-12">
                         <p className='text-center'>
-                            <Link to="/" className='text-dark'>Home/{title}</Link>
+                            <Link to="/" className='text-dark'>Home / {title}</Link>
                         </p>
                     </div>
                 </div>
