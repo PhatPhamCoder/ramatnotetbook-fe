@@ -33,7 +33,7 @@ const Login = () => {
                                             Forgot password?
                                         </Link>
                                         <div className="d-flex justify-content-center gap-15 align-items-center mt-3">
-                                            <button className='button border-0'>Đăng nhập</button>
+                                            <button className='button border-0' type='submit'>Đăng nhập</button>
                                             <Link to="/signup" className='button signup'>Đăng ký</Link>
                                         </div>
                                     </div>

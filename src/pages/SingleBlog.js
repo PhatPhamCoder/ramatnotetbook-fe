@@ -1,7 +1,6 @@
 import React from 'react';
 import BreakCrumb from '../components/BreakCrumb';
 import Meta from '../components/Meta';
-import BlogCard from "../components/BlogCard";
 import { Link } from 'react-router-dom';
 import { BsArrowLeft } from 'react-icons/bs';
 const SingleBlog = () => {

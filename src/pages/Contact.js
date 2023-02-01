@@ -42,7 +42,7 @@ class Contact extends Component {
                                                     name=""
                                                     placeholder="Lời nhắn"
                                                     id=""
-                                                    className="ư-100 form-control"
+                                                    className="w-100 form-control"
                                                     cols="30"
                                                     row="4"
                                                 ></textarea>
