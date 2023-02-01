@@ -1,12 +1,13 @@
 import React from 'react';
 import BreakCrumb from '../components/BreakCrumb';
+import Container from '../components/Container';
 import Meta from '../components/Meta';
 const Wishlist = () => {
     return (
         <>
             <Meta title="Wishlist" />
             <BreakCrumb title="Wishlist" />
-            <div className="wishlist-wrapper home-wrapper-2 py-5">
+            <Container class1="wishlist-wrapper home-wrapper-2 py-5">
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-3">
@@ -59,7 +60,7 @@ const Wishlist = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </>
     )
 }

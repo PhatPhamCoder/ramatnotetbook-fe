@@ -825,3 +825,57 @@ footer .input-group-text {
 }
 
 /* Main Product Page End */
+
+/* Cart Pages */
+.cart-header,
+.cart-data {
+  border-bottom: 1px solid #eaeaeaea;
+}
+
+.cart-header h4 {
+  font-size: 16px;
+  color: var(--color-777777);
+  font-weight: 700;
+}
+
+.cart-col-1 {
+  width: 40%;
+}
+
+.cart-col-1 p {
+  color: var(--color-777777);
+  font-size: 14px;
+}
+
+.cart-col-2 {
+  width: 10%;
+}
+
+.cart-col-3 {
+  width: 15%;
+}
+
+
+.cart-col-4 {
+  width: 15%;
+}
+
+.cart-data h5.price {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+}
+
+/* Cart Pages End */
+
+/* Shipping Page */
+.total {
+  font-size: 14px;
+  color: var(--color-1c1c1b);
+}
+
+.total-price {
+  font-size: 16px;
+  color: var(--color-777777);
+}
+
+/* Shipping Page End */

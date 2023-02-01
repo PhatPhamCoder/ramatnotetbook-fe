@@ -2,12 +2,13 @@ import React from 'react';
 import BreakCrumb from '../components/BreakCrumb';
 import Meta from '../components/Meta';
 import BlogCard from "../components/BlogCard";
+import Container from '../components/Container';
 const Blog = () => {
     return (
         <>
             <Meta title="Blog" />
             <BreakCrumb title="Blog" />
-            <div className="blog-wrapper home-wrapper-2 py-5">
+            <Container class1="blog-wrapper home-wrapper-2 py-5">
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-3">
@@ -47,7 +48,7 @@ const Blog = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </>
     )
 }

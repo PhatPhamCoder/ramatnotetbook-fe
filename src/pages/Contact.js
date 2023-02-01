@@ -3,13 +3,14 @@ import BreakCrumb from '../components/BreakCrumb';
 import Meta from '../components/Meta';
 import { AiOutlineHome, AiOutlineMail, AiOutlineInfoCircle } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
+import Container from '../components/Container';
 class Contact extends Component {
     render() {
         return (
             <>
                 <Meta title="Contact" />
                 <BreakCrumb title="Contact" />
-                <div className="contact-wrapper py-5 home-wrapper-2">
+                <Container class1="contact-wrapper py-5 home-wrapper-2">
                     <div className="container-xxl">
                         <div className="row">
                             <div className="col-12">
@@ -80,7 +81,7 @@ class Contact extends Component {
                             </div>
                         </div >
                     </div >
-                </div >
+                </Container >
             </>
         );
     }
