@@ -107,7 +107,7 @@ const SingleProduct = () => {
                                 </div>
                                 <div className="d-flex gap-15 flex-row align-items-center mt-2 mb-3">
                                     <h3 className="product-heading">Số lượng:</h3>
-                                    <div className="">
+                                    <div>
                                         <input
                                             type="number"
                                             name=""

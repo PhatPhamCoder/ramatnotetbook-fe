@@ -104,7 +104,6 @@ const Cart = () => {
                                 <Link to="/checkout" className="button">Thanh toán</Link>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </Container>
