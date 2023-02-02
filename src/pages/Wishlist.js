@@ -58,7 +58,6 @@ const Wishlist = () => {
                         </div>
                     </div>
                 </div>
-
             </Container>
         </>
     )

@@ -46,7 +46,7 @@ const OurStore = () => {
                                 </div>
                                 <h5 className="sub-title">Giá</h5>
                                 <div className="d-flex align-items-center gap-10">
-                                    <div class="form-floating">
+                                    <div className="form-floating">
                                         <input
                                             type="email"
                                             className="form-control"
@@ -54,7 +54,7 @@ const OurStore = () => {
                                             placeholder="Form" />
                                         <label for="floatingInput">Form</label>
                                     </div>
-                                    <div class="form-floating">
+                                    <div className="form-floating">
                                         <input
                                             type="email"
                                             className="form-control"
@@ -178,10 +178,11 @@ const OurStore = () => {
                                     <p className="mb-0 d-block" style={{ width: "180px" }} s>Sắp xếp theo:</p>
                                     <select
                                         name=""
+                                        defaultValue={"manual"}
                                         className="form-control form-select"
                                         id=""
                                     >
-                                        <option value="">Loại giấy</option>
+                                        <option value="manual">Loại giấy</option>
                                         <option value="">Giá Thấp đến Cao </option>
                                         <option value="">Giá Cao đến Thấp </option>
                                         <option value="">Mới nhất</option>
