@@ -14,6 +14,8 @@
   --color-ededed: #ededed;
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
+  --color-ffffff: #ffffff;
+  --color-ebebeb: #ebebeb;
 }
 
 .section-heading {
@@ -38,6 +40,35 @@ a {
   display: inline-block;
 }
 
+/* Line around text */
+.title_lines {
+  position: relative;
+  font-size: 30px;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+  font-family: arial;
+  text-transform: uppercase;
+}
+
+.title_lines:before,
+.title_lines:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 48%;
+  height: 2px;
+  content: '\a0';
+  background-color: #cccccc;
+  margin-left: 2%;
+}
+
+.title_lines:before {
+  margin-left: -50%;
+  text-align: right;
+}
+
+/* Line around text end */
 .form-control:focus {
   box-shadow: none;
   border-color: inherit;
@@ -71,24 +102,44 @@ a {
 /* Header Part */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
-  background-color: var(--color-131921);
+  background-color: var(--color-ffffff);
 }
 
 .header-upper {
-  background-color: var(--color-131921);
+  /* background-color: var(--color-131921); */
+  background-color: white;
 }
 
 .header-bottom {
-  background-color: var(--color-232f3e);
+  /* background-color: var(--color-232f3e); */
+  background-color: var(--color-ffffff);
 }
 
 .header-upper .input-group-text {
   background-color: var(--color-febd69);
 }
 
-.header-bottom .menu-links a,
-.header-bottom .dropdown button {
-  color: white;
+.header-upper .logo-header img {
+  height: 50px;
+}
+
+.header-upper .input-group span {
+  border-radius: 20px;
+}
+
+.header-upper .input-group {
+  border-radius: 20px;
+  width: calc(100% - 30px);
+  border: 0px solid;
+  box-shadow: 0px 0px 30px var(--color-ebebeb);
+}
+
+.header-bottom .menu-links {
+  border-radius: 10px;
+  height: 60px;
+}
+
+.header-bottom .menu-links a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -96,25 +147,23 @@ a {
   text-transform: uppercase;
 }
 
-.header-bottom .dropdown button:focus {
-  box-shadow: none;
+.header-bottom .menu-links {
+  position: relative;
+  text-align: center;
+  display: block;
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 15px 30px;
 }
 
-.header-bottom .dropdown-menu {
-  background-color: var(--color-131921);
-  width: 100%;
-  transform: translate(0px, 57px, 0px) !important;
-}
-
-.header-bottom .dropdown-item {
-  padding: 20px;
-  margin-bottom: 3px;
-  border-bottom: 1px solid var(--color-3b4149);
-}
-
-.header-bottom .dropdown-item:hover {
-  background-color: transparent;
-  color: var(--color-febd69) !important;
+.header-bottom {
+  position: sticky;
+  top: 0;
+  padding-top: 0;
+  z-index: 10000;
+  box-shadow: 0px 0px 30px var(--color-ebebeb);
+  border-radius: 0px 0px 10px 10px;
 }
 
 /* Header Part End */
@@ -132,6 +181,23 @@ footer .input-group-text {
   background-color: var(--color-232f3e);
   color: white;
   text-transform: uppercase;
+}
+
+footer .pay-wrapper a {
+  width: 100%;
+  height: 20px;
+}
+
+footer .pay-wrapper a small {
+  width: 100%;
+}
+
+footer .pay-wrapper {
+  position: relative;
+  text-align: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Footer Part End*/
@@ -204,6 +270,17 @@ footer .input-group-text {
   width: 49%;
 }
 
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  top: -20px;
+}
+
+.carousel-wrapper img {
+  height: 500px;
+}
+
+/* Carousel Wrapper End */
 /* Home Wrapper 2 */
 .home-wrapper-2 {
   background-color: var(--color-f5f5f7);
@@ -401,36 +478,29 @@ footer .input-group-text {
 /* Special Products End */
 /* Home Page End */
 
-/* Famous-card */
-.famous-card .famous-content {
-  top: 22%;
-  left: 20%;
-}
-
-.famous-card img {
-  border-radius: 10px;
-}
-
-.famous-content .button {
-  text-align: center;
-  font-weight: 700;
-  height: 75px;
-  width: 240px;
-  padding: 10px;
-  border-radius: 30px;
-  font-size: 40px;
-  background-color: #fff9bb;
-  border: 3px solid #f67703;
-  color: #f67703 !important;
-  line-height: 45px;
-}
-
-.famous-content .button:hover {
-  background-color: #3b4149;
+/* Collec=ction-card */
+.collection-warpper .colection-card {
   color: white;
+  width: 400px;
+  height: 260px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px var(--color-ebebeb);
 }
 
-/* Famous-card End */
+.collection-warpper .colection-card h5 {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Collection-card End */
 
 /* Our Store */
 .filter-card {

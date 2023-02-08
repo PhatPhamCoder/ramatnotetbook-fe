@@ -1,11 +1,12 @@
 import * as React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs"
-
+import { BsFacebook, BsInstagram, BsFillMicFill } from 'react-icons/bs';
+import logoHeader from "../images/logo-header.png";
 const Header = () => {
     return (
         <>
-            <header className="header-top-strip py-2">
+            {/* <header className="header-top-strip py-2">
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-6">
@@ -23,31 +24,50 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-            </header>
-            <header className="header-upper py-2">
+            </header> */}
+            <header className="header-upper">
                 <div className="container-xxl">
-                    <div className="row align-item-center">
-                        <div className="col-2">
-                            <h5 className="py-3">
-                                {/* <a className='text-white' href='#'>Ramat Note Book</a> */}
-                                <Link to="/" className='text-white'>Ramat Note Book</Link>
-                            </h5>
-                        </div>
+                    <div className="row">
                         <div className="col-5">
-                            <div className="input-group p-2">
-                                <input
-                                    type="text"
-                                    className="form-control py-1"
-                                    placeholder='Search Product Here'
-                                    aria-label='Search Product Here'
-                                    aria-describedby='basic-addon2'
-                                />
-                                <span className='input-group-text p-2' id="basic-addon2">
-                                    <BsSearch className='fs-6' />
-                                </span>
+                            <Link to="/" className='logo-header'>
+                                <img src={logoHeader} alt="logo-header" className="img-fluid py-1" />
+                            </Link>
+                        </div>
+                        <div className="col-7 row d-flex justify-content-end align-items-center">
+                            <div className="col-3 py-2">
+                                <div className="hotline d-flex gap-10 fw-bold">
+                                    Hotline: <a href="tel:0345601839" className="text-dark">0345601839</a>
+                                </div>
+                            </div>
+                            <div className="col-6 py-2">
+                                <div className="input-group">
+                                    <span className='input-group-text p-2 border-0 text-dark bg-white ' id="basic-addon2">
+                                        <BsSearch className='fs-6' />
+                                    </span>
+                                    <input
+                                        type="text"
+                                        className="form-control py-1 border-0"
+                                        placeholder='What are you looking for ?'
+                                        aria-label='Search Product Here'
+                                        aria-describedby='basic-addon2'
+                                    />
+                                    <span className='input-group-text p-2 border-0 text-dark bg-white' id="basic-addon3">
+                                        <BsFillMicFill className='fs-6' />
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="col-1 py-2">
+                                <div className="d-flex align-items-center gap-15">
+                                    <a href="https://www.instagram.com/ramat.notebook/" className='text-dark'>
+                                        <BsInstagram className='fs-4' />
+                                    </a>
+                                    <a href="https://www.facebook.com/ramat.notebook" className='text-dark'>
+                                        <BsFacebook className='fs-4' />
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-5">
+                        {/* <div className="col-5">
                             <div className="header-upper-links d-flex align-items-center justify-content-between gap-15">
                                 <div>
                                     <Link to="" className="d-flex align-items-center gap-10 text-white">
@@ -83,43 +103,37 @@ const Header = () => {
                                     </Link>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
-                </div >
-            </header >
-            <header className="header-bottom py-2">
-                <div className="container-xxl">
+                </div>
+            </header>
+            <header className="header-bottom">
+                <div className="container">
                     <div className="row">
                         <div className="col-12">
-                            <div className="menu-bottom d-flex align-items-center gap-30">
-                                <div className="dropdown">
-                                    <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center"
-                                        type="button"
-                                        id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <img src="images/menu.svg" alt="" />
-                                        <span className="me-5 d-inline-block">Shop Categories</span>
-                                    </button>
-                                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a className="dropdown-item text-white" href="#">Action</a></li>
-                                        <li><a className="dropdown-item text-white" href="#">Another action</a></li>
-                                        <li><a className="dropdown-item text-white" href="#">Something else here</a></li>
-                                    </ul>
-                                </div>
-                                <div className="menu-links">
-                                    <div className="d-flex align-items-center gap-15" >
-                                        <NavLink to="/" end>Home</NavLink>
-                                        <NavLink to="/product" end>Our Store</NavLink>
-                                        <NavLink to="/blog" end>Blogs</NavLink>
-                                        <NavLink to="/contact" end>Contact</NavLink>
-                                    </div>
-                                </div>
+                            <div className="menu-links">
+                                <ul class="nav col-12 d-flex align-items-center justify-content-center">
+                                    <li>
+                                        <Link to="/" class="nav-link link-secondary text-dark fw-bold">Home</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/product" class="nav-link link-dark text-dark fw-bold">NoteBook</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/" class="nav-link link-dark text-dark fw-bold">Handmade Gift</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/" class="nav-link link-dark text-dark fw-bold">Accessories</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/blog" class="nav-link link-dark text-dark fw-bold">Our Stories</Link>
+                                    </li>
+                                </ul>
                             </div>
-                        </div >
-                    </div >
+                        </div>
+                    </div>
                 </div>
-            </header >
+            </header>
         </>
     );
 }

@@ -1,15 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Marquee from "react-fast-marquee";
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
-import SpecialProduct from '../components/SpecialProduct';
 import Container from '../components/Container';
 import { services } from "../utils/Data";
+import Carousel from 'react-bootstrap/Carousel';
 const Home = () => {
     return (
         <>
-            <Container class1="home-wrapper-1 py-5">
+            {/* <Container class1="home-wrapper-1 py-5">
                 <div className="row">
                     <div className="col-6">
                         <div className="main-banner position-relative">
@@ -74,19 +73,104 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </Container> */}
+            <div class="home-wrapper-1">
+                <div className="carousel-wrapper">
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100 img-fluid rounded"
+                                src="https://images.unsplash.com/photo-1675191475318-d2bf6bad1200?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>First slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100 img-fluid rounded"
+                                src="https://images.unsplash.com/photo-1675208985060-78a2d4a28dc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                alt="Second slide"
+                            />
+
+                            <Carousel.Caption>
+                                <h3>Second slide label</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100 img-fluid rounded"
+                                src="https://images.unsplash.com/photo-1675410541565-af66672ad1f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                alt="Third slide"
+                            />
+
+                            <Carousel.Caption>
+                                <h3>Third slide label</h3>
+                                <p>
+                                    Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                                </p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
+            </div>
+            <Container class1="featured-wrapper py-4 home-wrapper-2">
+                <div className="row">
+                    <div className="col-12 pb-4">
+                        <h3 className="section-heading text-center py-2 mb-0 title_lines">
+                            Sản phẩm nổi bật
+                        </h3>
+                    </div>
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                </div>
             </Container>
-            <Container class1="home-wrapper-1 py-5">
+            <Container class1="collection-warpper py-4 home-wrapper-1">
+                <div className="col-12 pb-4">
+                    <h3 className="section-heading text-center title_lines">
+                        Bộ sưu tập
+                    </h3>
+                </div>
+                <div className="row">
+                    <div className="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                        <div className="colection-card text-center">
+                            <h5 className='text-dark'>Sổ tay quà tặng</h5>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                        <div className="colection-card text-center">
+                            <h5 className='text-dark'>Sổ tay thiết kế</h5>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                        <div className="colection-card text-center">
+                            <h5 className='text-dark'>Handmade</h5>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                        <div className="colection-card text-center">
+                            <h5 className='text-dark'>Quà tặng <br />Doanh nghiệp</h5>
+                        </div>
+                    </div>
+                </div>
+            </Container>
+            <Container class1="home-wrapper-1 pb-4">
                 <div className="row">
                     <div className="col-12">
                         <div className="services d-flex align-items-center justify-content-between">
                             {
-                                services?.map((i, j) => {
+                                services?.map((item, index) => {
                                     return (
-                                        <div className='d-flex align-items-center gap-15' key={j}>
-                                            <img src={i.image} alt="service" />
+                                        <div className='d-flex align-items-center gap-15' key={index}>
+                                            <img src={item.image} alt={item.title} />
                                             <div>
-                                                <h6 className='fw-bold'>{i.title}</h6>
-                                                <p className='mb-0'>{i.tagline}</p>
+                                                <h6 className='fw-bold'>{item.title}</h6>
+                                                <p className='mb-0'>{item.tagline}</p>
                                             </div>
                                         </div>
                                     );
@@ -96,142 +180,34 @@ const Home = () => {
                     </div>
                 </div>
             </Container>
-            <Container class1="home-wrapper-2 py-5">
+            <Container class1="blog-wrapper py-4 home-wrapper-2">
                 <div className="row">
-                    <div className="col-12">
-                        <div className="categories d-flex justify-content-between flex-wrap align-items-center">
-                            <div className='d-flex gap-30 align-items-center'>
-                                <div>
-                                    <h6>Sổ lò xo</h6>
-                                    <p>10 items</p>
-                                </div>
-                                <img src="images/categories-1.png" alt="camera" />
-                            </div>
-                            <div className='d-flex gap-30 align-items-center'>
-                                <div>
-                                    <h6>NoteBook</h6>
-                                    <p>10 items</p>
-                                </div>
-                                <img src="images/categories-2.png" alt="camera" />
-                            </div>
-                            <div className='d-flex gap-30 align-items-center'>
-                                <div>
-                                    <h6>Phụ kiện trang trí</h6>
-                                    <p>10 items</p>
-                                </div>
-                                <img src="images/categories-3.png" alt="camera" />
-                            </div>
-                            <div className='d-flex gap-30 align-items-center'>
-                                <div>
-                                    <h6>Bookmarks</h6>
-                                    <p>10 items</p>
-                                </div>
-                                <img src="images/categories-4.png" alt="camera" />
-                            </div>
-                            <div className='d-flex gap-30 align-items-center'>
-                                <div>
-                                    <h6>Sổ lò xo</h6>
-                                    <p>10 items</p>
-                                </div>
-                                <img src="images/categories-1.png" alt="camera" />
-                            </div>
-                            <div className='d-flex gap-30 align-items-center'>
-                                <div>
-                                    <h6>NoteBook</h6>
-                                    <p>10 items</p>
-                                </div>
-                                <img src="images/categories-2.png" alt="camera" />
-                            </div>
-                            <div className='d-flex gap-30 align-items-center'>
-                                <div>
-                                    <h6>Phụ kiện trang trí</h6>
-                                    <p>10 items</p>
-                                </div>
-                                <img src="images/categories-3.png" alt="camera" />
-                            </div>
-                            <div className='d-flex gap-30 align-items-center'>
-                                <div>
-                                    <h6>Bookmarks</h6>
-                                    <p>10 items</p>
-                                </div>
-                                <img src="images/categories-4.png" alt="camera" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Container>
-            <Container class1="featured-wrapper py-5 home-wrapper-2">
-                <div className="row">
-                    <div className="col-12">
-                        <h3 className="section-heading">
-                            Feauture Collection
+                    <div className="col-12 pb-4">
+                        <h3 className="section-heading text-center title_lines">
+                            Our Stories
                         </h3>
                     </div>
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                </div>
-            </Container>
-            <Container class1="famous-warpper py-5 home-wrapper-2">
-                <div className="row">
-                    <div className="col-4 d-flex justify-content-between gap-5 ">
-                        <div className="famous-card position-relative mx-auto">
-                            <img src="images/famous-1.png" className='img-fluid' alt="famous" />
-                            <div className='famous-content position-absolute '>
-                                <Link to="/" className='button'>Xem thêm</Link>
-                            </div>
-                        </div>
+                    <div className="col-3">
+                        <BlogCard />
                     </div>
-                    <div className="col-4 d-flex justify-content-between gap-5 ">
-                        <div className="famous-card position-relative mx-auto">
-                            <img src="images/famous-2.png" className='img-fluid' alt="famous" />
-                            <div className='famous-content position-absolute '>
-                                <Link to="/" className='button'>Xem thêm</Link>
-                            </div>
-                        </div>
+                    <div className="col-3">
+                        <BlogCard />
                     </div>
-                    <div className="col-4 d-flex justify-content-between gap-5 ">
-                        <div className="famous-card position-relative mx-auto">
-                            <img src="images/famous-3.png" className='img-fluid' alt="famous" />
-                            <div className='famous-content position-absolute '>
-                                <Link to="/" className='button'>Xem thêm</Link>
-                            </div>
-                        </div>
+                    <div className="col-3">
+                        <BlogCard />
+                    </div>
+                    <div className="col-3">
+                        <BlogCard />
                     </div>
                 </div>
             </Container>
-            <Container class1="special-wrapper py-5 home-wrapper-2">
+            <Container class1="marque-wrapper py-4">
                 <div className="row">
-                    <div className="col-12">
-                        <h3 className="section-heading">
-                            Special Products
+                    <div className="col-12 pb-4">
+                        <h3 className="section-heading text-center title_lines">
+                            Khách hàng
                         </h3>
                     </div>
-                    <div className="row">
-                        <SpecialProduct />
-                        <SpecialProduct />
-                        <SpecialProduct />
-                    </div>
-                </div>
-            </Container>
-            <Container class1="popular-wrapper py-5 home-wrapper-2">
-                <div className="row">
-                    <div className="col-12">
-                        <h3 className="section-heading">
-                            Our Popular Products
-                        </h3>
-                    </div>
-                    <div className="row">
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
-                        <ProductCard />
-                    </div>
-                </div>
-            </Container>
-            <Container class1="marque-wrapper py-5">
-                <div className="row">
                     <div className="col-12">
                         <div className="marquee-inner-wrapper bg-white p-3 card-wrapper">
                             <Marquee className='d-flex'>
@@ -258,27 +234,6 @@ const Home = () => {
                                 </div>
                             </Marquee>
                         </div>
-                    </div>
-                </div>
-            </Container>
-            <Container class1="blog-wrapper py-5 home-wrapper-2">
-                <div className="row">
-                    <div className="col-12">
-                        <h3 className="section-heading">
-                            Our Lastest Blogs
-                        </h3>
-                    </div>
-                    <div className="col-3">
-                        <BlogCard />
-                    </div>
-                    <div className="col-3">
-                        <BlogCard />
-                    </div>
-                    <div className="col-3">
-                        <BlogCard />
-                    </div>
-                    <div className="col-3">
-                        <BlogCard />
                     </div>
                 </div>
             </Container>

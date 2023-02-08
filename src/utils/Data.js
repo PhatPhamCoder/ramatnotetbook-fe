@@ -10,11 +10,6 @@ export const services = [
         "image": "images/service-02.png",
     },
     {
-        "title": "Siêu Sale mỗi ngày",
-        "tagline": "Tiết kiếm lên đến 30%",
-        "image": "images/service-02.png",
-    },
-    {
         "title": "Hỗ trợ 24/7",
         "tagline": "Liên hệ qua hotline",
         "image": "images/service-03.png",
