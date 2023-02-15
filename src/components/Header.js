@@ -120,7 +120,7 @@ const Header = () => {
                                         <Link to="/product" class="nav-link link-dark text-dark fw-bold">NoteBook</Link>
                                     </li>
                                     <li>
-                                        <Link to="/" class="nav-link link-dark text-dark fw-bold">Handmade Gift</Link>
+                                        <Link to="/handmade-gift" class="nav-link link-dark text-dark fw-bold">Handmade Gift</Link>
                                     </li>
                                     <li>
                                         <Link to="/" class="nav-link link-dark text-dark fw-bold">Accessories</Link>

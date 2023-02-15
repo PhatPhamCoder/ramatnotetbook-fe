@@ -20,17 +20,10 @@ import TermAndContions from './pages/TermAndContions';
 import SingleProduct from './pages/SingleProduct';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
+import HandmadeGift from "./pages/HandmadeGift";
+
 function App() {
-  const [backendData, setbackendData] = useState([{}]);
-  useEffect(() => {
-    fetch("/api").then(
-      response => response.json()
-    ).then(
-      data => {
-        setbackendData(data)
-      }
-    )
-  }, [])
+
   return (
     <>
       <BrowserRouter>
@@ -41,6 +34,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="product" element={<OurStore />} />
             <Route path="product/:id" element={<SingleProduct />} />
+            <Route path="handmade-gift" element={<HandmadeGift />} />
             <Route path="blog" element={<Blog />} />
             <Route path="blog/:id" element={<SingleBlog />} />
             <Route path="cart" element={<Cart />} />

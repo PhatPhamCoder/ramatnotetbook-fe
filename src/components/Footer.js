@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BsFacebook, BsInstagram, BsYoutube, BsTelegram } from 'react-icons/bs';
 import newsletter from "../images/newsletter.png";
+import { ImLocation2 } from "react-icons/im";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsTelephone } from "react-icons/bs"
 const Footer = () => {
     return (
         <>
@@ -57,25 +60,25 @@ const Footer = () => {
                             </h4>
                             <div>
                                 <address className='text-white fs-7'>
-                                    HCMC: 79 Tô Hiến Thành, Quận 10
+                                    <ImLocation2 /> HCMC: 79 Tô Hiến Thành, Quận 10
                                 </address>
                                 <a href='tel:+84777077293' className='mt-4 d-block mb-3 text-white'>
-                                    (+84) 777 077 293
+                                    <BsTelephone />  (+84) 777 077 293
                                 </a>
                                 <a href='mailto:cskh@ramatnotebook.com' className='mt-4 d-block mb-3 text-white'>
-                                    cskh@ramatnotebook.com
+                                    <AiOutlineMail /> cskh@ramatnotebook.com
                                 </a>
                                 <div className="social-icon d-flex align-items-center gap-30 mt-4">
-                                    <a href="" className='text-white'>
+                                    <a href="https://www.facebook.com/ramat.notebook" className='text-white'>
                                         <BsFacebook className='fs-4' />
                                     </a>
-                                    <a href="" className='text-white'>
+                                    <a href="https://www.instagram.com/ramat.notebook/" className='text-white'>
                                         <BsInstagram className='fs-4' />
                                     </a>
-                                    <a href="" className='text-white'>
+                                    <a href="https://ramatnotetbook-fe.vercel.app/" className='text-white'>
                                         <BsTelegram className='fs-4' />
                                     </a>
-                                    <a href="" className='text-white'>
+                                    <a href="https://www.facebook.com/ramat.notebook" className='text-white'>
                                         <BsYoutube className='fs-4' />
                                     </a>
                                 </div>
@@ -84,10 +87,10 @@ const Footer = () => {
                         <div className="col-6 col-md-2">
                             <h4 className='text-white mb-4'>Information</h4>
                             <div className='footer-links d-flex flex-column'>
-                                <Link to="/privacy-policy" end className='text-white py-2 mb-1'>Privacy Policy</Link>
-                                <Link to="/refund-policy" end className='text-white py-2 mb-1'>Refund Policy</Link>
-                                <Link to="/term-conditions" end className='text-white py-2 mb-1'>Terms & Conditions</Link>
-                                <Link to="/blog" end className='text-white py-2 mb-1'>Blogs</Link>
+                                <Link to="/privacy-policy" className='text-white py-2 mb-1'>Privacy Policy</Link>
+                                <Link to="/refund-policy" className='text-white py-2 mb-1'>Refund Policy</Link>
+                                <Link to="/term-conditions" className='text-white py-2 mb-1'>Terms & Conditions</Link>
+                                <Link to="/blog" className='text-white py-2 mb-1'>Blogs</Link>
                             </div>
                         </div>
                         <div className="col-6 col-md-2">

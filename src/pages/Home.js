@@ -1,4 +1,5 @@
 import React from 'react';
+import Meta from '../components/Meta';
 import Marquee from "react-fast-marquee";
 import BlogCard from '../components/BlogCard';
 import ProductCard from '../components/ProductCard';
@@ -74,6 +75,7 @@ const Home = () => {
                     </div>
                 </div>
             </Container> */}
+            <Meta title="Ramat Note Book" />
             <div class="home-wrapper-1">
                 <div className="carousel-wrapper">
                     <Carousel fade>
