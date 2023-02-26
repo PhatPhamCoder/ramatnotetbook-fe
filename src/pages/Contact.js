@@ -21,7 +21,8 @@ class Contact extends Component {
                                 allowfullscreen=""
                                 loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
+                                title='Map'
+                            />
                         </div>
                         <div className="col-12 mt-5">
                             <div className="contact-inner-wrapper d-flex justify-content-between">

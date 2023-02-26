@@ -14,7 +14,7 @@ const SingleProduct = () => {
         zoomWidth: 600,
         img: "https://cf.shopee.vn/file/451df1a07e9eb2dac74070acf95f8395"
     };
-    const [orderedProduct, setorderedProduct] = useState(true);
+    const [orderedProduct] = useState(true);
     let copyToClipboard = (text) => {
         console.log('text', text)
         var textField = document.createElement('textarea')
@@ -120,7 +120,7 @@ const SingleProduct = () => {
                                     <div className="d-flex align-items-center gap-15 ms-6">
                                         <button className='button border-0' type='submit'>Thêm vào giỏ hàng</button>
                                         <Link to="/signup" className='button'>Mua ngay</Link>
-                                        <a hre="/wishlist" className='wishlist d-flex align-items-center'>
+                                        <a href="/wishlist" className='wishlist d-flex align-items-center'>
                                             <AiOutlineHeart /> Danh sách ước
                                         </a>
                                     </div>
@@ -134,8 +134,11 @@ const SingleProduct = () => {
                                 </div>
                                 <div className="d-flex gap-10 align-items-center my-2">
                                     <h3 className="product-heading">Product Link</h3>
-                                    <a href="javascript:void(0)"
-                                        onClick={() => { copyToClipboard("https://cf.shopee.vn/file/451df1a07e9eb2dac74070acf95f8395") }}
+                                    <a
+                                        href="/"
+                                        onClick={() => {
+                                            copyToClipboard("https://cf.shopee.vn/file/451df1a07e9eb2dac74070acf95f8395")
+                                        }}
                                     >
                                         Copy Product Link
                                     </a>
@@ -178,7 +181,7 @@ const SingleProduct = () => {
                                 {
                                     orderedProduct && (
                                         <div>
-                                            <a href="" className="text-dark text-decoration-underline">Viết đánh giá</a>
+                                            <a href="/" className="text-dark text-decoration-underline">Viết đánh giá</a>
                                         </div>
                                     )
                                 }
@@ -247,4 +250,4 @@ const SingleProduct = () => {
     )
 }
 
-export default SingleProduct
+export default SingleProduct;

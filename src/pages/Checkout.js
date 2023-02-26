@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BreakCrumb from '../components/BreakCrumb';
+// import BreakCrumb from '../components/BreakCrumb';
 import Meta from '../components/Meta';
 import { BiArrowBack } from "react-icons/bi";
 import book01 from "../images/book-01.png";
-import book02 from "../images/book-02.png";
+// import book02 from "../images/book-02.png";
 import Container from '../components/Container';
 const Checkout = () => {
     return (
