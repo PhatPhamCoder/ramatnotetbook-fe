@@ -338,6 +338,7 @@ footer .pay-wrapper {
 
 .blog-content {
   padding: 15px;
+  cursor: pointer;
 }
 
 .blog-content p.date {

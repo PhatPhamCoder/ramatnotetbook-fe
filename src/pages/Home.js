@@ -6,6 +6,9 @@ import ProductCard from '../components/ProductCard';
 import Container from '../components/Container';
 import { services } from "../utils/Data";
 import Carousel from 'react-bootstrap/Carousel';
+import Banner from "../images/banner.png";
+import Banner2 from "../images/banner-2.png";
+import Banner3 from "../images/banner-3.png";
 const Home = () => {
     return (
         <>
@@ -82,39 +85,36 @@ const Home = () => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100 img-fluid rounded"
-                                src="https://images.unsplash.com/photo-1675191475318-d2bf6bad1200?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
+                                src={Banner}
+                                alt="banner-1" />
+                            {/* <Carousel.Caption>
                                 <h3>First slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            </Carousel.Caption>
+                            </Carousel.Caption> */}
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100 img-fluid rounded"
-                                src="https://images.unsplash.com/photo-1675208985060-78a2d4a28dc8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                src={Banner2}
                                 alt="Second slide"
                             />
-
-                            <Carousel.Caption>
+                            {/* <Carousel.Caption>
                                 <h3>Second slide label</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            </Carousel.Caption>
+                            </Carousel.Caption> */}
                         </Carousel.Item>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100 img-fluid rounded"
-                                src="https://images.unsplash.com/photo-1675410541565-af66672ad1f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                src={Banner3}
                                 alt="Third slide"
                             />
-
-                            <Carousel.Caption>
+                            {/* <Carousel.Caption>
                                 <h3>Third slide label</h3>
                                 <p>
                                     Praesent commodo cursus magna, vel scelerisque nisl consectetur.
                                 </p>
-                            </Carousel.Caption>
+                            </Carousel.Caption> */}
                         </Carousel.Item>
                     </Carousel>
                 </div>
