@@ -40,6 +40,11 @@ a {
   display: inline-block;
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+}
+
 /* Line around text */
 .title_lines {
   position: relative;
