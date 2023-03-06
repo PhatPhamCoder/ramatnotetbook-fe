@@ -53,7 +53,7 @@ const Header = () => {
                 </div>
               </div>
               <div className="col-3 py-2">
-                <div className="d-flex align-items-center gap-10">
+                <div className="d-flex align-items-center gap-15">
                   <Link
                     to="/cart"
                     className="d-flex align-items-center gap-10 position-relative"
@@ -101,11 +101,11 @@ const Header = () => {
           <div className="row">
             <div className="col-12">
               <div className="menu-links">
-                <ul class="nav col-12 d-flex align-items-center justify-content-center">
+                <ul className="nav col-12 d-flex align-items-center justify-content-center">
                   <li>
                     <Link
                       to="/"
-                      class="nav-link link-secondary text-dark fw-bold"
+                      className="nav-link link-secondary text-dark fw-bold"
                     >
                       Home
                     </Link>
@@ -113,7 +113,7 @@ const Header = () => {
                   <li>
                     <Link
                       to="/product"
-                      class="nav-link link-dark text-dark fw-bold"
+                      className="nav-link link-dark text-dark fw-bold"
                     >
                       NoteBook
                     </Link>
@@ -121,20 +121,23 @@ const Header = () => {
                   <li>
                     <Link
                       to="/handmade-gift"
-                      class="nav-link link-dark text-dark fw-bold"
+                      className="nav-link link-dark text-dark fw-bold"
                     >
                       Handmade Gift
                     </Link>
                   </li>
                   <li>
-                    <Link to="/" class="nav-link link-dark text-dark fw-bold">
+                    <Link
+                      to="/"
+                      className="nav-link link-dark text-dark fw-bold"
+                    >
                       Accessories
                     </Link>
                   </li>
                   <li>
                     <Link
                       to="/blog"
-                      class="nav-link link-dark text-dark fw-bold"
+                      className="nav-link link-dark text-dark fw-bold"
                     >
                       Our Stories
                     </Link>

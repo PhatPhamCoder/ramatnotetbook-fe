@@ -10,7 +10,9 @@ import { registerUser } from "../features/user/userSlice";
 const signUpSchema = object({
   firstname: string().required("Họ và tên đệm không được để trống"),
   lastname: string().required("Tên không được để trống"),
-  email: string().email("Email không được để trống"),
+  email: string()
+    .email("Vui lòng nhập đúng định dạng email")
+    .required("Email không được để trống"),
   mobile: number().required("Số điện thoại không được để trống"),
   password: string().required("Mật khẩu không được để trống"),
 });
@@ -38,7 +40,7 @@ const Signup = () => {
         <div className="row">
           <div className="col-12">
             <div className="auth-card">
-              <h2 className="text-center">Tạo tài khoản</h2>
+              <h2 className="text-center">Đăng ký tài khoản</h2>
               <form
                 action=""
                 onSubmit={formik.handleSubmit}
@@ -101,7 +103,7 @@ const Signup = () => {
                 </div>
                 <div>
                   <div className="d-flex justify-content-center gap-15 align-items-center mt-3">
-                    <button className="button border-0">Tạo tài khoản</button>
+                    <button className="button border-0">Đăng ký</button>
                   </div>
                 </div>
               </form>

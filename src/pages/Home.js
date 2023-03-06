@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Meta title="Ramat Note Book" />
-      <div class="home-wrapper-1">
+      <div className="home-wrapper-1">
         <div className="carousel-wrapper">
           <Carousel fade>
             <Carousel.Item>
